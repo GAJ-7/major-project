@@ -35,8 +35,21 @@ function App() {
 
   return (
     <Router>
+        <nav>
+          <ul>
+            <li>
+              <Link to="/home">Home</Link>
+            </li>
+            <li>
+              <Link to="/upload">Upload File</Link>
+            </li>
+            <li>
+              <Link to="/viewData">Data Table</Link>
+            </li>
+          </ul>
+        </nav>      
         <Routes>
-          <Route exact path="/" element={<Home />} />
+          <Route exact path="/home" element={<Home />} />
           <Route exact path="/upload" element={<UploadFile />} />
           <Route exact path="/viewData" element={<ViewData />} />
           {/* <Route path="*" element={<NotFound />} /> */}
